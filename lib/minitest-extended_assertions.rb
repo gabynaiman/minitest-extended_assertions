@@ -1,0 +1,1 @@
+require_relative 'minitest/extended_assertions'

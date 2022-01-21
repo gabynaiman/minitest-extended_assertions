@@ -1,0 +1,2 @@
+require_relative 'extended_assertions/version'
+require_relative 'extended_assertions/deep_comparator'
