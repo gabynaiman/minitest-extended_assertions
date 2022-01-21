@@ -26,8 +26,6 @@ Or install it yourself as:
 ## Usage
 
 
-```
-
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/gabynaiman/minitest-extended_assertions.
