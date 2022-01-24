@@ -1,7 +1,7 @@
 # Minitest::ExtendedAssertions
 
 [![Gem Version](https://badge.fury.io/rb/minitest-extended_assertions.svg)](https://rubygems.org/gems/minitest-extended_assertions)
-[![Build Status](https://travis-ci.com/gabynaiman/minitest-extended_assertions.svg?branch=master)](https://travis-ci.com/gabynaiman/minitest-extended_assertions)
+[![Build Status](https://app.travis-ci.com/gabynaiman/minitest-extended_assertions.svg?branch=master)](https://app.travis-ci.com/gabynaiman/minitest-extended_assertions)
 [![Coverage Status](https://coveralls.io/repos/github/gabynaiman/minitest-extended_assertions/badge.svg?branch=master)](https://coveralls.io/github/gabynaiman/minitest-extended_assertions?branch=master)
 [![Code Climate](https://codeclimate.com/github/gabynaiman/minitest-extended_assertions.svg)](https://codeclimate.com/github/gabynaiman/minitest-extended_assertions)
 
