@@ -5,7 +5,7 @@ describe Minitest::ExtendedAssertions::DeepComparator do
   def assert_differences(expected, actual, expected_diffs)
     actual_diffs = Minitest::ExtendedAssertions::DeepComparator.compare expected, actual
 
-    assert_equal expected_diffs, actual_diffs.map { |d| d.to_h.compact }
+    assert_equal expected_diffs, actual_diffs.map { |d| d.to_h.reject { |k,v| v.nil? } }
   end
 
   describe 'Primitives' do
