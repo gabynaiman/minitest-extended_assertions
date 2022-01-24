@@ -42,6 +42,23 @@ actual.must_equal_hash expected
 #   Actual: 1
 ```
 
+### Array
+```ruby
+expected = [1, 2, 3, 4]
+actual = [1, 20, 3, 40]
+
+assert_equal_array expected, actual
+actual.must_equal_array expected
+
+# [1]
+# Expected: 2
+#   Actual: 20
+
+# [3]
+# Expected: 4
+#   Actual: 40
+```
+
 ### JSON
 ```ruby
 expected = '{"a": 1, "b": 2}'

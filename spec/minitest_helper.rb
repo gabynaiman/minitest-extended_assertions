@@ -5,6 +5,7 @@ require 'pry-nav'
 
 require 'minitest/extended_assertions'
 require_relative 'equal_hash_examples'
+require_relative 'equal_array_examples'
 require_relative 'equal_json_examples'
 
 class Minitest::Test

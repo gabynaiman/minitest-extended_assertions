@@ -12,6 +12,16 @@ describe Minitest::Expectations do
 
   end
 
+  describe 'must_equal_array' do
+
+    include EqualArrayExamples
+
+    def run_assertion(expected, actual)
+      actual.must_equal_array expected
+    end
+
+  end
+
   describe 'must_equal_json' do
 
     include EqualJsonExamples
