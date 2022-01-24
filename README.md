@@ -25,6 +25,11 @@ Or install it yourself as:
 
 ## Usage
 
+### Add in minitest_helper
+```ruby
+require 'minitest/extended_assertions'
+```
+
 ### Hash
 ```ruby
 expected = {a: 1, b: 2}
