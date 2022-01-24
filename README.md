@@ -1,4 +1,4 @@
-# ExcelUtils
+# Minitest::ExtendedAssertions
 
 [![Gem Version](https://badge.fury.io/rb/minitest-extended_assertions.svg)](https://rubygems.org/gems/minitest-extended_assertions)
 [![Build Status](https://travis-ci.com/gabynaiman/minitest-extended_assertions.svg?branch=master)](https://travis-ci.com/gabynaiman/minitest-extended_assertions)
