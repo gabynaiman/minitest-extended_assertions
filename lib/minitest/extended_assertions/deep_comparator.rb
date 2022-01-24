@@ -20,6 +20,10 @@ module Minitest
           }
         end
 
+        def to_s
+          [path, "Expected: #{expected.inspect}", "  Actual: #{actual.inspect}"].compact.join("\n")
+        end
+
       end
 
       class << self

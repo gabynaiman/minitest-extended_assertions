@@ -8,10 +8,6 @@ describe Minitest::ExtendedAssertions::DeepComparator do
     assert_equal expected_diffs, actual_diffs.map { |d| d.to_h.compact }
   end
 
-  def deep_clone(object)
-    Marshal.load(Marshal.dump(object))
-  end
-
   describe 'Primitives' do
 
     it 'Equal' do
@@ -184,6 +180,34 @@ describe Minitest::ExtendedAssertions::DeepComparator do
         ]
       end
 
+    end
+
+  end
+
+  describe 'Difference' do
+
+    let (:difference) { Minitest::ExtendedAssertions::DeepComparator::Difference.new '[:key]', 1, 2 }
+
+    let (:difference_without_path) { Minitest::ExtendedAssertions::DeepComparator::Difference.new nil, 1, 2 }
+
+    it 'to_h' do
+      expected = {path: '[:key]', expected: 1, actual: 2}
+      assert_equal expected, difference.to_h
+    end
+
+    it 'to_h (without path)' do
+      expected = {path: nil, expected: 1, actual: 2}
+      assert_equal expected, difference_without_path.to_h
+    end
+
+    it 'to_s' do
+      expected = "[:key]\nExpected: 1\n  Actual: 2"
+      assert_equal expected, difference.to_s
+    end
+
+    it 'to_s (without path)' do
+      expected = "Expected: 1\n  Actual: 2"
+      assert_equal expected, difference_without_path.to_s
     end
 
   end
