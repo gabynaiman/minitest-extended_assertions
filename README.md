@@ -25,6 +25,39 @@ Or install it yourself as:
 
 ## Usage
 
+### Hash
+```ruby
+expected = {a: 1, b: 2}
+actual = {a: 2, b: 1}
+
+assert_equal_hash expected, actual
+actual.must_equal_hash expected
+
+# [:a]
+# Expected: 1
+#   Actual: 2
+
+# [:b]
+# Expected: 2
+#   Actual: 1
+```
+
+### JSON
+```ruby
+expected = '{"a": 1, "b": 2}'
+actual = '{"a": 2, "b": 1}'
+
+assert_equal_json expected, actual
+actual.must_equal_json expected
+
+# ["a"]
+# Expected: 1
+#   Actual: 2
+
+# ["b"]
+# Expected: 2
+#   Actual: 1
+```
 
 ## Contributing
 
